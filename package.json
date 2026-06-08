@@ -10,7 +10,6 @@
   "license": "GPL-3.0-only",
   "private": true,
   "scripts": {
-    "start": "node --max-old-space-size=4096 app.js",
     "dev": "vite dev --port 3000",
     "build": "bun scripts/generate-manifest.ts && vite build",
     "deploy": "bun db:migrate && wrangler deploy",
