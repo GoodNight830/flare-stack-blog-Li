@@ -11,7 +11,7 @@
   "private": true,
   "scripts": {
     "dev": "vite dev --port 3000",
-    "build:large": "bun --max-old-space-size=4096 build ./src/index.ts"
+    "build:large": "bun --max-old-space-size=4096 build ./src/index.ts",
     "build": "bun scripts/generate-manifest.ts && vite build",
     "deploy": "bun db:migrate && wrangler deploy",
     "serve": "vite preview",
